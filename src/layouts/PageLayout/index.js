@@ -9,25 +9,27 @@ import background from "../../assets/img/background.jpg" //Background
 import logo from '../../assets/img/logo.png'; //Logo
 
 
-function pageLayout( props ) {
+function pageLayout(props) {
     //EDITABLE
     const deskripsi = "Selamat datang kembali di"
-    const title = "Kulon Progo Binangun Blended Learning"
-    const slogan = "Belajar daring di rumah seharusnya tidak menjadi kesempatan untuk kamu bisa bermalas-malasan. Ingat, saat kamu malas, ada banyak orang yang terus berjuang menyusulmu."
-    const copyright = "2021 Kulon Progo Binangun Blended Learning - Didukung oleh Geschool"
+    const title1 = "Muhammadiyah DIY"
+    const title2 = "Blended Learning"
+    const slogan = "Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga."
+    const copyright = "2021 Muhammadiyah DIY Blended Learning - Didukung oleh Geschool"
 
     return (
         <div>
             <Topography />
-            <Hero 
+            <Hero
                 logo={logo}
                 background={background}
                 deskripsi={deskripsi}
-                title={title}
+                title1={title1}
+                title2={title2}
                 slogan={slogan}
                 appName={props.appName}
             >
-                { props.children }
+                {props.children}
             </Hero>
             <Footer
                 copyright={copyright}
